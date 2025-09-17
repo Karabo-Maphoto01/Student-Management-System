@@ -53,5 +53,17 @@ public class StudentManager {
         return false; 
     }
     
-    
+    //Method to update student
+    public boolean updateStudent (String ID, String newName, int newAge) {
+        Student student = searchStudent(ID);
+        if(ID != null) {
+            student.setName(newName);
+            if(newAge>0){
+                student.setAge(newAge);
+                      
+            }
+            return true;
+        }
+        return false;
+    }
 }
