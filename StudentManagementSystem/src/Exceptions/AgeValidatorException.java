@@ -20,7 +20,6 @@ public class AgeValidatorException {
         if(age >= 60){
             throw new AgeException("Age must not be older 50 years!");
         }
-        System.out.println("Age is valid");
     }
     
 }

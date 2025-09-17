@@ -84,12 +84,12 @@ public class StudentManagementSystem {
                     
                 case 3://Search
                 {   
-                    System.out.print("Enter a student ID: ");
+                    System.out.print("Enter Student ID: ");
                     String studentID = scan.nextLine();
                         
                     Student found = manager.searchStudent(studentID);
                     if(found != null){
-                        System.out.println("Student found: " + found);
+                        System.out.println("Student found: \n" + found);
                     }else{
                         System.out.println("Student not found!");
                     }
@@ -99,21 +99,41 @@ public class StudentManagementSystem {
                     
                 case 4://Remove
                 {
-                    System.out.println("Enter student ID: ");
+                    System.out.print("Enter student ID: ");
                     String studentID = scan.nextLine();
                     
                     if(manager.removeStudent(studentID)){
                        System.out.println("Student removed successfully."); 
                     }else{
-                        System.out.println("Unsuccessful!");
+                        System.out.println("Student not found!");
+                    }  
+                    
+                }break;
+                
+                case 5://Updating
+                {
+                    System.out.print("Enter Student ID to  update: ");
+                    String ID = scan.nextLine();
+                    
+                    System.out.print("Enter new name: ");
+                    String ename = scan.nextLine();
+                    
+                    System.out.print("Enter new age: ");
+                    int eage = scan.nextInt();
+                    scan.nextLine();
+                    
+                    if(manager.updateStudent(ID, ename, eage)){
+                        System.out.println("Student updated successfully.");
+                    }else{
+                        System.out.println("Student not found!");
                     }
-                    
-                    
                 }
                     
                 default:
                     
             }
         }while(choice != 6);
+        
+        scan.close();//close the scannner
    }
 }
