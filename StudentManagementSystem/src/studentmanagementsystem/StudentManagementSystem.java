@@ -19,10 +19,8 @@ public class StudentManagementSystem {
         Scanner scan = new Scanner(System.in);
         AgeValidatorException validator = new AgeValidatorException();
         
-        
-        
-        
-        //Instatiating a student object
+ 
+        //Instantiate an array object
         StudentManager manager = new StudentManager();
         
         int choice; // Declaring a data type for the user's input
@@ -55,7 +53,7 @@ public class StudentManagementSystem {
                         
                          System.out.print("Enter Name: ");  
                          String name = scan.nextLine();
-                       //Catch age exception and repeat the process until a valiuid age is entered  
+                       //Catch age exception and repeat the process until a valid age requirement is entered  
                        do {                       
                         try {                         
                             System.out.print("Enter Age: ");
@@ -66,13 +64,13 @@ public class StudentManagementSystem {
                             System.out.println("Error: " + e.getMessage());
                         }
                         
-                        if(age >= 18 && age <=60){
+                        if(age >= 17 && age <=45){
                             Student student = new Student(studentID, name, age);
                             manager.addStudent(student);
                             System.out.println("Student added successfully!");
                         }        
                         
-                    } while (age <= 17 || age >= 60);
+                    } while (age < 17 || age > 45);
                 }
                     break;
                 

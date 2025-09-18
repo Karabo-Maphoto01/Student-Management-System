@@ -11,14 +11,14 @@ package studentmanagementsystem;
 public class AgeValidatorException {
     
     public static void validateAge(int age) {
-        //Setting age to be from 18 years and above
-        if(age <= 17){
-            throw new AgeException("Age must be older than 17 years, please try again!");
+        //Setting age to be from 17 years and above
+        if(age < 17){
+            throw new AgeException("Age must be older than 16 years, please try again!");
         }
         
-        //Students shoulds be older than 60
-        if(age >= 60){
-            throw new AgeException("Age must not be older 50 years!");
+        //Students should not be older than 45
+        if(age > 45){
+            throw new AgeException("Age must not be older 45 years!");
         }
     }
     
