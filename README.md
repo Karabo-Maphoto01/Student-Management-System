@@ -37,10 +37,10 @@ The system allows you to:
 -Input validation and basic error handling
 
  Future Improvements
--Save student records to a file or database
--Add GPA or course details
--Implement a graphical user interface (GUI)
--Add sorting (e.g., by name or age)
+- Save student records to a file or database
+- Add GPA or course details
+- Implement a graphical user interface (GUI)
+- Add sorting (e.g., by name or age)
 
  Author
 -Karabo
