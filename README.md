@@ -16,10 +16,10 @@ The system allows you to:
 
 ---
 
-## 🛠️ Technologies Used
-- **Java 
-- **ArrayList** for data storage
-- **Scanner** for user input
+## Technologies Used
+-  Java 
+-  ArrayList for data storage
+-  Scanner for user input
 
 ---
 
