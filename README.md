@@ -30,11 +30,11 @@ The system allows you to:
 - README.md # Project documentation
 
 # Learning Outcomes
--Understanding classes and objects in Java
--Implementing CRUD operations (Create, Read, Update, Delete)
--Using ArrayList for dynamic data storage
--Building a menu-driven program using Scanner
--Input validation and basic error handling
+- Understanding classes and objects in Java
+- Implementing CRUD operations (Create, Read, Update, Delete)
+- Using ArrayList for dynamic data storage
+- Building a menu-driven program using Scanner
+- Input validation and basic error handling
 
  Future Improvements
 - Save student records to a file or database
